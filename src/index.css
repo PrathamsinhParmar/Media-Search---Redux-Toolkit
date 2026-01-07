@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+body{
+  /* background-color:rgb(2, 1, 37); */
+  /* background-color: rgb(20, 1, 1); */
+  background-color: rgb(27, 1, 19);
+  color: white;
+  font-family:Helvetica, sans-serif;
+}
+
+:root{
+  
+  --c1:rgb(0, 247, 255);
+  --c2:rgb(176, 255, 250);
+  --c3:rgb(255, 0, 135);
+  --c4:rgb(255, 125, 176);
+  --c5:#f91894;
+
+}
+
+#contentContainer{
+    border-radius: 10px;
+    border: 0.2px solid var(--c3);
+  }
+
+
+#cardContainer::-webkit-scrollbar{
+  display: none;
+}
+
+/* #contentContainer:hover{
+  border: 1px solid rgb(15, 231, 255);
+  transform: scale(1.06);
+  transition-duration: 200ms;
+  box-shadow: 0 0 20px rgba(15, 231, 255, 0.8);
+} */
+
+
+
+@media (max-width: 600px) {
+
+
+  #cardContainer{
+    padding-left: 23px;
+    padding-right: 2px;
+    justify-content: start;
+
+  }
+
+  #contentContainer{
+   
+    width: 150px;
+    height: 175px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 0.2px solid var(--c3);
+  }
+
+  #logo{
+    height: 45px;
+  }
+
+  #searchInput, #searchBtn{
+    font-size: 14px;
+  }
+
+  #searchForm{
+    padding: 15px 20px;
+  }
+
+  #navbar{
+    height: 65px;
+    padding: 1px 20px;
+  }
+
+  #tabContainer{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #aboutSlogan{
+    font-size: 26px;
+  }
+
+  #gradient-text {
+  /* background: linear-gradient(115deg, #f426ff, #faa5a5); */
+  background:  linear-gradient(115deg, #f1a7f1, #fad0c4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+}
