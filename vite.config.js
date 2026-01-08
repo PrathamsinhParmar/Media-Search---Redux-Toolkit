@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   server: {
     allowedHosts: [
-     'qualifications-matt-choosing-asylum.trycloudflare.com'
+     'chapel-socks-regional-east.trycloudflare.com'
     ]
   }
 })

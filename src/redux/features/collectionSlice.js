@@ -43,6 +43,7 @@ const collectionSlice = createSlice({
                 progress: undefined,
                 theme: "dark",
                 transition: Zoom,
+                className: "add-toast"
             });
         },
         removeToast:()=>{
@@ -56,6 +57,7 @@ const collectionSlice = createSlice({
                 progress: undefined,
                 theme: "dark",
                 transition: Zoom,
+                className: "remove-toast"
             });
         },
         clearCollectionToast:()=>{
@@ -69,7 +71,8 @@ const collectionSlice = createSlice({
                 progress: undefined,
                 theme: "dark",
                 transition: Zoom,
-                });
+                className: "clearcollection-toast"
+            });
         }
     }
 

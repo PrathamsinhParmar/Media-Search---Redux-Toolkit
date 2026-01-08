@@ -4,7 +4,7 @@ import heroImage from '../assects/MediaSearch Hero Image.png'
 const About = () => {
     return (
         <div className='h-screen w-full p-5 items-center capitalize'>
-            <div className='w-70 font-bold text-2xl h-18 text-white mx-5 my-4 mb-5'>
+            <div className='w-full font-bold text-2xl h-18 text-white  my-4 mb-5 flex justify-center'>
                 <h1 id='gradient-text'>Discover. Search. Save.<br />
                     All Media in One Place.</h1>
             </div>

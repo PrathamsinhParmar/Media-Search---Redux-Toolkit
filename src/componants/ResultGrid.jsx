@@ -19,13 +19,15 @@ const ResultGrid = () => {
                 let data = []
                 if (activeTab == 'photos') {
                     let response = await fetchPhotoes(query)
+                    console.log(response)
                     data = response.data.results.map((item, idx) => ({
                         id: item.id,
                         type: 'photo',
                         title: item.alt_description,
                         thumbnail: item.urls.thumb,
                         src: item.urls.full,
-                        url: item.links.html
+                        url: item.links.html,
+                        download_url : item.links.download
                     }))
                 }
 
@@ -45,6 +47,7 @@ const ResultGrid = () => {
 
                 if (activeTab == 'gif') {
                     let response = await fetchGIFS(query)
+                    console.log(response)
                     data = response.data.results.map((item) => ({
                         id: item.id,
                         type: 'gif',
@@ -52,7 +55,9 @@ const ResultGrid = () => {
                         title:item.title,
                         thumbnail: item.media_formats.gif.url,
                         src: item.media_formats.mp4.url,
-                        url: item.url
+                        url: item.url,
+                        download_url : item.media_formats.mp4.url
+
                     }))
                     // console.log(data)
                 }

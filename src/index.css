@@ -49,8 +49,8 @@ body{
 
   #contentContainer{
    
-    width: 150px;
-    height: 175px;
+    width: 10.3rem;
+    height: 11.3rem;
     border-radius: 8px;
     overflow: hidden;
     border: 0.2px solid var(--c3);
@@ -91,5 +91,6 @@ body{
   font-size: 26px;
   font-weight: bold;
 }
+  
 
 }

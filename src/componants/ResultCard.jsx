@@ -7,11 +7,15 @@ const ResultCard = ({ item }) => {
     const dispatch = useDispatch()
 
 
-    const addCollection = (item)=>{
+    const addCollection = (item) => {
         // console.log("Hui Hui")
         dispatch(addToCollection(item))
-         dispatch(addedToast(item))
+        dispatch(addedToast(item))
     }
+
+    // const downloadUrl = (item)=>{
+    //     <a href={item.download_url}></a>
+    // }
 
 
     return (
@@ -22,16 +26,25 @@ const ResultCard = ({ item }) => {
                 {item.type == 'gif' ? <img className='h-full w-full object-cover object-center' src={item.thumbnail} alt="" /> : ''}
 
             </a>
-                
+
             <div className='w-full absolute bottom-0 text-white p-2 flex items-end justify-between'>
-                <h2 className='font-semibold capitalize text-xs'>{item.title}</h2>
-                <button className='font-medium capitalize text-xs bg-(--c3) rounded px-2 py-1 cursor-pointer active:bg-(--c4)'
-                    onClick={()=>{
-                        addCollection(item)
-                    }}
-                >Save</button>
+                {/* <h2 className='font-semibold capitalize text-xs'>{item.title}</h2> */}
+                <div className='w-full flex flex-row justify-between'>
+                    <button className='font-medium capitalize text-xs bg-(--c3) rounded px-2 py-1 cursor-pointer active:bg-(--c4)'
+                        onClick={() => {
+                            addCollection(item)
+                        }} 
+                    >Save</button>
+                    <a href={item.download_url}>
+                        <button className='font-medium capitalize text-xs bg-(--c3) rounded px-2 py-1 cursor-pointer active:bg-(--c4)'
+
+                        >Download</button>
+                    </a>
+                </div>
+
+
             </div>
-        
+
         </div>
     )
 }

@@ -10,18 +10,18 @@ import Navbar from './componants/Navbar'
 import About from './pages/About'
 import { ToastContainer } from 'react-toastify'
 
+
 const App = () => {
   return (
     <div className='h-screen w-full'>
 
       <Navbar />
-
       <Routes>
         <Route path='/' element={<HomePage />}/>
         <Route path='/collection' element={<CollectionPage />}/>
       </Routes>
-      
       <ToastContainer />
+     
     </div>
   )
 }
