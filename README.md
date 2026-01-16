@@ -1,3 +1,5 @@
+Media Search is an web application that contains three features (Photos, Videos, GIFs) of given user query.
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
