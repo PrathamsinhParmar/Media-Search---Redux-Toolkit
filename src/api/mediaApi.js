@@ -13,7 +13,6 @@ export const fetchPhotoes = async (query, page=1, per_page=20)=>{
     return response
 }
 
-
 // SEARCH VIDEOS FROM UNSPLASH
 export const fetchVideos = async (query, per_page=20)=>{
     const response = await axios.get('https://api.pexels.com/videos/search', {
@@ -23,9 +22,6 @@ export const fetchVideos = async (query, per_page=20)=>{
 
     return response
 }
-
-
-
 
 // SEARCH GIFS FROM TENOR
 export const fetchGIFS = async (query, limit=20)=>{
