@@ -7,5 +7,4 @@ const FooterContainer = () => {
     </div>
   )
 }
-
 export default FooterContainer
